@@ -1,0 +1,21 @@
+---
+driver:
+  name: ec2
+  aws_ssh_key_id: denislav
+  security_group_ids: ["sg-144e4f59"]
+  region: us-east-1
+  instance_type: t1.micro
+  associate_public_ip: true
+
+transport:
+  ssh_key: "~/.ssh/id_rsa" 
+  username: ubuntu
+
+platforms:
+  - name: ubuntu-14.04 
+    driver:
+      image_id: ami-0294cb3d917faa41a 
+      instance_type: t2.micro
+
+suites:
+  - name: default
