@@ -17,5 +17,8 @@ platforms:
       image_id: ami-0294cb3d917faa41a 
       instance_type: t2.micro
 
+verifier:
+  name: inspec
+
 suites:
   - name: default
