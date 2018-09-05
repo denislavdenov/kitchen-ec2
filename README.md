@@ -1,11 +1,14 @@
 # kitchen-ec2 example 
 
 1.   Create a key pair in AWS where you put your public key
-1.1. Use that name for the parametar ` aws_ssh_key_id: denislav `
+
+1.1. Use that name for the parametar `aws_ssh_key_id: denislav`
 
 
 2.1.  gem install aws-sdk
+
 2.2.  gem install ec2
+
 2.3.  kitchen init --driver=kitchen-ec2 --crete-gemfile
 
 3.    Fork the repo and use this code as you should verify the values for all parametars : ami_id:, region:, etc
