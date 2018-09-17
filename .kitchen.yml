@@ -4,7 +4,6 @@ driver:
   aws_ssh_key_id: denislav
   security_group_ids: ["sg-144e4f59"]
   region: us-east-1
-  instance_type: t1.micro
   associate_public_ip: true
 
 transport:
