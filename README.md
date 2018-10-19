@@ -1,19 +1,22 @@
 # kitchen-ec2 example 
 
-- Create a key pair in AWS where you put your public key
+- **Create a key pair in AWS where you put your public key**
+  - create ssh key pair if you do not have `ssh keygen`
+  - go to AWS and create a key pair using your public key and name the parameter below with the name of the key pair
   - Use that name for the parametar `aws_ssh_key_id: denislav`
 
-- Install kitchen and dependencies
-  -  gem install aws-sdk
+- **Install kitchen and dependencies**
+  -  brew install rbenv
+  -  install chefdk 2.5.3-1 version
   -  gem install ec2
   -  kitchen init --driver=kitchen-ec2 --crete-gemfile
   
-- Fork the repo and use this code as you should verify the values for all parameters :
+- **Fork the repo and use this code as you should verify the values for all parameters:**
   - ami_id:
   - ..
   - region:
 
-- When you have fullfilled all needed info do:
+- **When you have fullfilled all needed info do:**
   -  `kitchen list`
 
 ```
