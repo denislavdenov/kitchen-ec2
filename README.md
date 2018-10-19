@@ -25,4 +25,4 @@ default-ubuntu-1404  Ec2     ChefSolo     Busser    Ssh        <Not Created>  <N
 - run the test
   - `kitchen test`
 
-# In this case kitchen is going to test if your AMI has NGINX installed
+### In this case kitchen is going to test if your AMI has NGINX package installed,if its service is installed,running and enabled, checks nginx version and some of its parameters.
