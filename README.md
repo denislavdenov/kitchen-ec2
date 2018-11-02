@@ -11,8 +11,8 @@
   
 ### Prerequisites - run below commands in order to set up the environment needed for the testing part
 - **Install kitchen and dependencies**
-  -  brew install rbenv
-  -  rbenv install 2.3.1
+  -  `brew install rbenv` and `rbenv install 2.3.1` on Mac
+  -  `apt-get install ruby` for Linux
   -  gem install bundler
   -  bundle install
   
@@ -29,7 +29,7 @@
   -  `bundle exec kitchen list`
 
 ```
-denislavdenov@Denislavs-MacBook-Pro kitchen-ec2 $ kitchen list
+denislavdenov@Denislavs-MacBook-Pro kitchen-ec2 $ bundle exec kitchen list
 Instance             Driver  Provisioner  Verifier  Transport  Last Action    Last Error
 default-ubuntu-1404  Ec2     ChefSolo     Busser    Ssh        <Not Created>  <None>
 ```
