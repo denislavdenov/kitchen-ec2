@@ -13,11 +13,8 @@
 - **Install kitchen and dependencies**
   -  brew install rbenv
   -  rbenv install 2.3.1
-  -  install chefdk 2.5.3-1 version
-  -  gem install ec2
   -  gem install bundler
   -  bundle install
-  -  kitchen init --driver=kitchen-ec2 --crete-gemfile
   
   
 - **Fork the repo and use this code as you should verify the values for all parameters:**
@@ -29,7 +26,7 @@
 ### Testing part:
 
 - **When you have fullfilled all needed info do:**
-  -  `kitchen list`
+  -  `bundle exec kitchen list`
 
 ```
 denislavdenov@Denislavs-MacBook-Pro kitchen-ec2 $ kitchen list
@@ -38,6 +35,6 @@ default-ubuntu-1404  Ec2     ChefSolo     Busser    Ssh        <Not Created>  <N
 ```
 
 - run the test
-  - `kitchen test`
+  - `bundle exec kitchen test`
 
 ### In this case kitchen is going to test if your AMI has NGINX package installed,if its service is installed,running and enabled, checks nginx version and some of its parameters.
